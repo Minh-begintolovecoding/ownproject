@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.BasicInfo.TargetActivity">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="100"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:padding="@dimen/marginBase"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mục tiêu của bạn là gì?"
+            android:textSize="@dimen/textNormal"
+            android:textColor="@color/black_word"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbGiamCan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Giảm cân"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black_word"
+                android:background="@drawable/text_view_background"
+                android:layoutDirection="rtl" />
+            <RadioButton
+                android:id="@+id/rbDuyTri"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Duy trì"
+                android:paddingLeft="20dp"
+                android:background="@drawable/text_view_background"
+                android:textColor="@color/black_word"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="@dimen/marginBase"/>
+            <RadioButton
+                android:id="@+id/rbTangCan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Tăng cân"
+                android:paddingLeft="20dp"
+                android:background="@drawable/text_view_background"
+                android:textColor="@color/black_word"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="@dimen/marginBase"/>
+            />
+
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnTiepTuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiếp tục"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white_word"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/marginBase"
+        />
+</LinearLayout>
