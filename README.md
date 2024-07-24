@@ -12,4 +12,4 @@
 | :-- | :------- | :---------------- | :------------------------------- | :--------------------- |
 | 1   | 21521131| Nguyễn Đặng Đức Minh    | https://github.com/Minh-begintolovecoding     | 21521131@gm.uit.edu.vn |
 
-## Sơ đồ usecase
+## Weather App
